@@ -4,26 +4,26 @@
 *.a
 *.so
 *.xml
-/.project
+# /.project
 *.XML
 *.htm
 *.html
-*.dll
+# *.dll
 *.patch
 *.orig
 *.out
 *.log
-*.sys
+# *.sys
 *.vxd
-*.exe
+# *.exe
 *.tgz
 .metadata/
 *.sdf
 *.suo
 Debug
-Release
+# Release
 Debug64
-Release64
+# Release64
 .metadata/
 html/
 latex/
@@ -31,5 +31,5 @@ latex/
 *.vcxproj.user
 .vs/
 .idea/
-build
-src/simdjson
+# build
+# src/simdjson

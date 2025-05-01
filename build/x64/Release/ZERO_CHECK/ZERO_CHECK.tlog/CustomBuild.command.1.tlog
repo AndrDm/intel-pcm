@@ -1,0 +1,10 @@
+^C:\USERS\ANDREY\DESKTOP\INTEL-PCM\BUILD\CMAKEFILES\A12226DF8A248C7A682156CBBE881D8C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/Desktop/intel-pcm -BC:/Users/Andrey/Desktop/intel-pcm/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Andrey/Desktop/intel-pcm/build/PCM.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

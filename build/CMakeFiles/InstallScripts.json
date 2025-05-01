@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Andrey/Desktop/intel-pcm/build/cmake_install.cmake",
+		"C:/Users/Andrey/Desktop/intel-pcm/build/src/cmake_install.cmake",
+		"C:/Users/Andrey/Desktop/intel-pcm/build/examples/cmake_install.cmake",
+		"C:/Users/Andrey/Desktop/intel-pcm/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

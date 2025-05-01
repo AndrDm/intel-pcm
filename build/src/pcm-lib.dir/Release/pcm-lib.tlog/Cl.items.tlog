@@ -1,0 +1,17 @@
+C:\Users\Andrey\Desktop\intel-pcm\src\bw.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\bw.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\cpucounters.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\cpucounters.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\debug.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\debug.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\lspci.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\lspci.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\mmio.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\mmio.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\msr.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\msr.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\pci.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\pci.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\pcm-accel-common.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\pcm-accel-common.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\pcm-iio-pmu.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\pcm-iio-pmu.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\pmt.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\pmt.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\pugixml\src\pugixml.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\pugixml.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\threadpool.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\threadpool.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\topology.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\topology.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\tpmi.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\tpmi.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\uncore_pmu_discovery.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\uncore_pmu_discovery.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\utils.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\utils.obj
+C:\Users\Andrey\Desktop\intel-pcm\src\winpmem\winpmem.cpp;C:\Users\Andrey\Desktop\intel-pcm\build\src\pcm-lib.dir\Release\winpmem.obj
