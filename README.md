@@ -91,10 +91,12 @@ IBRS enabled in the kernel   : no
 STIBP enabled in the kernel  : no
 Package thermal spec power: 57 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt;
 
-Socket 0: 0 PCU units detected. 0 IIO units detected. 0 IRP units detected. 0 CHA/CBO units detected. 0 MDF units detected. 0 UBOX units detected. 0 CXL units detected. 0 PCIE_GEN5x16 units detected. 0 PCIE_GEN5x8 units detected.
+Socket 0: 0 PCU units detected. 0 IIO units detected. 0 IRP units detected. 0 CHA/CBO units detected.
+0 MDF units detected. 0 UBOX units detected. 0 CXL units detected. 0 PCIE_GEN5x16 units detected.
+0 PCIE_GEN5x8 units detected.
 
-
-Detected Intel(R) Core(TM) i7-4940MX CPU @ 3.10GHz "Intel(r) microarchitecture codename Haswell" stepping 3 microcode level 0x28
+Detected Intel(R) Core(TM) i7-4940MX CPU @ 3.10GHz "Intel(r) microarchitecture codename Haswell"
+stepping 3 microcode level 0x28
 
  UTIL  : utlization (same as core C0 state active state residency, the value is in 0..1)
  IPC   : instructions per CPU cycle
@@ -107,10 +109,14 @@ Detected Intel(R) Core(TM) i7-4940MX CPU @ 3.10GHz "Intel(r) microarchitecture c
  L2MPI : number of L2 (read) cache misses per instruction
  READ  : bytes read from main memory controller (in GBytes)
  WRITE : bytes written to main memory controller (in GBytes)
- IO    : bytes read/written due to IO requests to memory controller (in GBytes); this may be an over estimate due to same-cache-line partial requests
- IA    : bytes read/written due to IA requests to memory controller (in GBytes); this may be an over estimate due to same-cache-line partial requests
- GT    : bytes read/written due to GT requests to memory controller (in GBytes); this may be an over estimate due to same-cache-line partial requests
- TEMP  : Temperature reading in 1 degree Celsius relative to the TjMax temperature (thermal headroom): 0 corresponds to the max temperature
+ IO    : bytes read/written due to IO requests to memory controller (in GBytes);
+         this may be an over estimate due to same-cache-line partial requests
+ IA    : bytes read/written due to IA requests to memory controller (in GBytes);
+         this may be an over estimate due to same-cache-line partial requests
+ GT    : bytes read/written due to GT requests to memory controller (in GBytes);
+         this may be an over estimate due to same-cache-line partial requests
+ TEMP  : Temperature reading in 1 degree Celsius relative to the TjMax temperature (thermal headroom):
+         0 corresponds to the max temperature
  energy: Energy in Joules
 
 
@@ -124,27 +130,29 @@ Detected Intel(R) Core(TM) i7-4940MX CPU @ 3.10GHz "Intel(r) microarchitecture c
    5    0     0.04   0.50    3.68     503 K   2992 K    0.83    0.42  0.0062  0.0366     49
    6    0     0.05   0.35    3.61     790 K   4252 K    0.81    0.35  0.0118  0.0634     51
    7    0     0.03   0.51    3.60     410 K   2056 K    0.80    0.48  0.0066  0.0330     51
----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
  SKT    0     0.07   0.52    3.68    7149 K     38 M    0.81    0.39  0.0068  0.0367     46
----------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
  TOTAL  *     0.07   0.52    3.68    7149 K     38 M    0.81    0.39  0.0068  0.0367     N/A
 
  Instructions retired: 1051 M ; Active cycles: 2014 M ; Time (TSC): 3313 Mticks;
 
- Core C-state residencies: C0 (active,non-halted): 6.81 %; C1: 21.42 %; C3: 1.85 %; C6: 0.00 %; C7: 69.92 %;
+ Core C-state residencies: C0 (active,non-halted): 6.81 %; C1: 21.42 %; C3: 1.85 %;
+ C6: 0.00 %; C7: 69.92 %;
  Package C-state residencies:  C0: 58.39 %; C2: 41.61 %; C3: 0.00 %; C6: 0.00 %; C7: 0.00 %;
-                             ┌───────────────────────────────────────────────────────────────────────────────┐
- Core    C-state distribution│0000011111111111111111377777777777777777777777777777777777777777777777777777777│
-                             └───────────────────────────────────────────────────────────────────────────────┘
-                             ┌────────────────────────────────────────────────────────────────────────────────┐
- Package C-state distribution│00000000000000000000000000000000000000000000000222222222222222222222222222222222│
-                             └────────────────────────────────────────────────────────────────────────────────┘
----------------------------------------------------------------------------------------------------------------
+ C-State distribution:
+                 ┌───────────────────────────────────────────────────────────────────────────────┐
+ Core    C-state │0000011111111111111111377777777777777777777777777777777777777777777777777777777│
+                 └───────────────────────────────────────────────────────────────────────────────┘
+                 ┌────────────────────────────────────────────────────────────────────────────────┐
+ Package C-state │00000000000000000000000000000000000000000000000222222222222222222222222222222222│
+                 └────────────────────────────────────────────────────────────────────────────────┘
+---------------------------------------------------------------------------------------------------
 
 MEM (GB)->|  READ |  WRITE |   IO   |   IA   |   GT   | CPU energy | PP0 energy | PP1 energy |
----------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
  SKT   0     0.76     0.21     0.15     0.76     0.07      13.01       6.55       0.11
----------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
  UTIL  : utlization (same as core C0 state active state residency, the value is in 0..1)
  ...
