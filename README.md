@@ -58,7 +58,11 @@ Copy sys near executable
 
 ![image-20250501093318732](assets/image-20250501093318732.png)
 
-To run you will need to disable Secure Boot in BIOS, turn off check for signing (bcdedit /set testsigning on and probably bcdedit /set nointegritychecks on), then reboot again, then run pcm.exe as Administrator, that is.
+To run you will need to disable Secure Boot in BIOS, turn off check for signing (bcdedit /set testsigning on and probably bcdedit /set nointegritychecks on), then reboot again, you will get hint on the desktop:
+
+![image-20250501100308988](assets/image-20250501100308988.png)
+
+then run pcm.exe as Administrator, that is.
 
 ```
 C:\Users\Andrey\Desktop\intel-pcm\build\bin\Release>pcm.exe
@@ -91,10 +95,6 @@ IBRS enabled in the kernel   : no
 STIBP enabled in the kernel  : no
 Package thermal spec power: 57 Watt; Package minimum power: 0 Watt; Package maximum power: 0 Watt;
 
-Socket 0: 0 PCU units detected. 0 IIO units detected. 0 IRP units detected. 0 CHA/CBO units detected.
-0 MDF units detected. 0 UBOX units detected. 0 CXL units detected. 0 PCIE_GEN5x16 units detected.
-0 PCIE_GEN5x8 units detected.
-
 Detected Intel(R) Core(TM) i7-4940MX CPU @ 3.10GHz "Intel(r) microarchitecture codename Haswell"
 stepping 3 microcode level 0x28
 
@@ -115,8 +115,8 @@ stepping 3 microcode level 0x28
          this may be an over estimate due to same-cache-line partial requests
  GT    : bytes read/written due to GT requests to memory controller (in GBytes);
          this may be an over estimate due to same-cache-line partial requests
- TEMP  : Temperature reading in 1 degree Celsius relative to the TjMax temperature (thermal headroom):
-         0 corresponds to the max temperature
+ TEMP  : Temperature reading in 1 degree Celsius relative to the TjMax temperature
+         (thermal headroom): 0 corresponds to the max temperature
  energy: Energy in Joules
 
 
@@ -141,18 +141,18 @@ stepping 3 microcode level 0x28
  C6: 0.00 %; C7: 69.92 %;
  Package C-state residencies:  C0: 58.39 %; C2: 41.61 %; C3: 0.00 %; C6: 0.00 %; C7: 0.00 %;
  C-State distribution:
-                 ┌───────────────────────────────────────────────────────────────────────────────┐
- Core    C-state │0000011111111111111111377777777777777777777777777777777777777777777777777777777│
-                 └───────────────────────────────────────────────────────────────────────────────┘
-                 ┌────────────────────────────────────────────────────────────────────────────────┐
- Package C-state │00000000000000000000000000000000000000000000000222222222222222222222222222222222│
-                 └────────────────────────────────────────────────────────────────────────────────┘
----------------------------------------------------------------------------------------------------
+                ┌───────────────────────────────────────────────────────────────────────────────┐
+Core    C-state │0000011111111111111111377777777777777777777777777777777777777777777777777777777│
+                └───────────────────────────────────────────────────────────────────────────────┘
+                ┌────────────────────────────────────────────────────────────────────────────────┐
+Package C-state │00000000000000000000000000000000000000000000000222222222222222222222222222222222│
+                └────────────────────────────────────────────────────────────────────────────────┘
+--------------------------------------------------------------------------------------------------
 
 MEM (GB)->|  READ |  WRITE |   IO   |   IA   |   GT   | CPU energy | PP0 energy | PP1 energy |
----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
  SKT   0     0.76     0.21     0.15     0.76     0.07      13.01       6.55       0.11
----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
 
  UTIL  : utlization (same as core C0 state active state residency, the value is in 0..1)
  ...
