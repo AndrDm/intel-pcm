@@ -1,0 +1,2 @@
+#define LABVIEWPCM_API __declspec(dllexport)
+#define LABVIEWPCM_API __declspec(dllimport)
