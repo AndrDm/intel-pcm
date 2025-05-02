@@ -3,11 +3,8 @@
 
 #include "framework.h"
 #include "LabVIEW-pcm.h"
-#include "../src/utils.h"
 #include "../src/cpucounters.h"
-#include "../src/topology.h"
 using namespace pcm;
-
 
 // This is an example of an exported variable
 LABVIEWPCM_API int nLabVIEWpcm=0;
@@ -18,12 +15,9 @@ static PCM* mGLB;
 
 LABVIEWPCM_API int fnLabVIEWinit(void)
 {
-    mGLB = PCM::getInstance(); // doesn't work in DLL?
-
+    mGLB = PCM::getInstance();
     // program counters, and on a failure just exit
-
-    if (mGLB->program() != PCM::Success) return -1; //-1 here
-
+    if (mGLB->program() != PCM::Success) return -1; //fail
     return 0;
 }
 
@@ -38,7 +32,9 @@ LABVIEWPCM_API int fnLabVIEWstop(void)
 	after_sstateGLB = getSystemCounterState();
 	return 0;
 }
-LABVIEWPCM_API int fnLabVIEWgetIPC(double *ipcLV, double *l2hitLV, uint64 *lv2missLV, double *l3hitLV, uint64 *l3missLV, uint64 *bytesReadLV)
+LABVIEWPCM_API int fnLabVIEWgetIPC(double *ipcLV, double *l2hitLV, uint64 *lv2missLV, 
+                                                  double *l3hitLV, uint64 *l3missLV, 
+                                                  uint64 *bytesReadLV)
 {
     *ipcLV = getIPC(before_sstateGLB, after_sstateGLB);
 	*l2hitLV = getL2CacheHitRatio(before_sstateGLB, after_sstateGLB);
